@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BusGo | Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">BusGo</a>
+      <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="routes.html">Routes</a>
+        <a class="active" href="booking.html">Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container booking-layout">
+      <section>
+        <div class="section-heading left">
+          <p class="eyebrow">Reserve your seat</p>
+          <h1>Simple booking form</h1>
+        </div>
+        <form class="booking-form panel" id="bookingForm">
+          <label>
+            Full name
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </label>
+          <label>
+            Route
+            <select id="route" required>
+              <option value="">Select a route</option>
+              <option>Mumbai to Pune</option>
+              <option>Delhi to Jaipur</option>
+              <option>Bangalore to Mysore</option>
+              <option>Chennai to Coimbatore</option>
+            </select>
+          </label>
+          <label>
+            Travel date
+            <input type="date" id="date" required>
+          </label>
+          <label>
+            Seats
+            <input type="number" id="seats" min="1" max="6" value="1" required>
+          </label>
+          <button class="btn btn-primary" type="submit">Confirm Booking</button>
+        </form>
+      </section>
+
+      <aside class="panel summary-card">
+        <p class="eyebrow">Booking summary</p>
+        <h2>Your trip details</h2>
+        <div id="bookingSummary">
+          <p>Fill in the form to preview your booking details here.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>BusGo</p>
+      <p>Reserve confidently with a smooth and responsive form.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
