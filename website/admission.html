@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Application</title>
+
+<link rel="stylesheet" href="css/admission.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="form-container">
+
+<div class="form-card">
+
+<h1>Admission Application</h1>
+
+<div class="progress-bar">
+<div class="step active"></div>
+<div class="step"></div>
+<div class="step"></div>
+<div class="step"></div>
+<div class="step"></div>
+</div>
+
+<form id="form">
+
+<!-- STEP 1 STUDENT DETAILS -->
+
+<div class="form-step active">
+
+<h2>Student Details</h2>
+
+<div class="grid">
+
+<input type="text" placeholder="Full Name of Student*" required>
+<input type="email" placeholder="Email*" required>
+<input type="tel" placeholder="Phone Number*" required>
+<input type="text" placeholder="Blood Group*">
+
+<input type="date" placeholder="Date of Birth*" required>
+<input type="text" placeholder="Nationality*" required>
+
+<select required>
+<option value="">Category*</option>
+<option>General</option>
+<option>OBC</option>
+<option>SC</option>
+<option>ST</option>
+</select>
+
+</div>
+
+<button type="button" class="next">Next</button>
+
+</div>
+
+<!-- STEP 2 PARENT DETAILS -->
+
+<div class="form-step">
+
+<h2>Parent / Guardian Details</h2>
+
+<div class="grid">
+
+<input type="text" placeholder="Father Name*" required>
+<input type="text" placeholder="Father Profession*">
+
+<input type="text" placeholder="Mother Name*" required>
+<input type="text" placeholder="Mother Profession*">
+
+<input type="text" placeholder="Guardian Name">
+<input type="text" placeholder="Guardian Profession">
+
+</div>
+
+<button type="button" class="prev">Back</button>
+<button type="button" class="next">Next</button>
+
+</div>
+
+<!-- STEP 3 ADDRESS -->
+
+<div class="form-step">
+
+<h2>Address Details</h2>
+
+<div class="grid">
+
+<textarea placeholder="Permanent Address*" required></textarea>
+
+<textarea placeholder="Local Guardian Address*" required></textarea>
+
+<input type="text" placeholder="Telephone No with STD Code">
+
+<input type="tel" placeholder="Mobile Number*" required>
+
+</div>
+
+<button type="button" class="prev">Back</button>
+<button type="button" class="next">Next</button>
+
+</div>
+
+<!-- STEP 4 FACILITIES -->
+
+<div class="form-step">
+
+<h2>Facilities Required</h2>
+
+<div class="radio-group">
+
+<label>Hostel Accommodation</label>
+<input type="radio" name="hostel"> Yes
+<input type="radio" name="hostel"> No
+
+<label>Join NCC</label>
+<input type="radio" name="ncc"> Yes
+<input type="radio" name="ncc"> No
+
+<label>Transportation</label>
+<input type="radio" name="transport"> Yes
+<input type="radio" name="transport"> No
+
+</div>
+
+<button type="button" class="prev">Back</button>
+<button type="button" class="next">Next</button>
+
+</div>
+
+<!-- STEP 5 QUALIFICATION -->
+
+<div class="form-step">
+
+<h2>Qualification of Student</h2>
+
+<table>
+
+<tr>
+<th>Class</th>
+<th>School</th>
+<th>Roll No</th>
+<th>Year</th>
+<th>Marks</th>
+<th>Percentage</th>
+</tr>
+
+<tr>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+</table>
+
+<button type="button" class="prev">Back</button>
+<button type="button" class="next">Next</button>
+
+</div>
+
+<!-- STEP 6 CONSENT -->
+
+<div class="form-step">
+
+<h2>Consent Declaration</h2>
+
+<div class="consent">
+
+<label><input type="checkbox"> I have never been disqualified from any examination</label>
+
+<label><input type="checkbox"> I have never been prosecuted or fined by institution</label>
+
+<label><input type="checkbox"> Information provided is correct</label>
+
+<label><input type="checkbox"> I will follow rules of institution</label>
+
+<label><input type="checkbox"> I understand ragging is banned</label>
+
+</div>
+
+<button type="button" class="prev">Back</button>
+<button type="button" class="next">Next</button>
+
+</div>
+
+<!-- STEP 7 PAYMENT -->
+
+<div class="form-step">
+
+<h2>Payment Details</h2>
+
+<p>Submit fees to the college bank account.</p>
+
+<div class="grid">
+
+<input type="text" placeholder="Course / Year*" required>
+
+<input type="text" placeholder="Bank Account Name used for payment*" required>
+
+<input type="text" placeholder="Transaction Number / Reference ID*" required>
+
+<input type="date" placeholder="Date of Payment*" required>
+
+</div>
+
+<button type="button" class="prev">Back</button>
+<button type="button" class="next">Next</button>
+
+</div>
+
+<!-- STEP 8 UPLOAD RECEIPT -->
+
+<div class="form-step">
+
+<h2>Upload Bank Receipt</h2>
+
+<input type="file" required>
+
+<p>Accepted file types: jpg, jpeg, png, pdf, doc, docx | Max size 2MB</p>
+
+<div class="captcha">
+<label>CAPTCHA</label>
+<input type="text" placeholder="Enter captcha">
+</div>
+
+<button type="button" class="prev">Back</button>
+<button type="submit">Submit Application</button>
+
+</div>
+
+</form>
+
+</div>
+</div>
+
+<script src="js/admission.js"></script>
+
+</body>
+</html>

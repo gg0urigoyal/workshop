@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVJAIN Admission Form 2026</title>
+  <meta
+    name="description"
+    content="A premium 2026 redesign of the AVJAIN admission form with the full student details flow and payment receipt upload."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-noise site-noise-one" aria-hidden="true"></div>
+  <div class="site-noise site-noise-two" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="../avjain-2026/index.html">
+        <img src="../avjain-2026/assets/logo.png" alt="AVJAIN logo">
+        <div class="brand-copy">
+          <strong>AVJAIN Admissions</strong>
+          <span>Shri Aatm Vallabh Jain Girls College</span>
+        </div>
+      </a>
+
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#student-form">Student Form</a>
+        <a href="#payment-form">Payment Proof</a>
+        <a class="top-link-accent" href="https://avjain.org/bank-accounts/" target="_blank" rel="noreferrer">Bank Accounts</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Admission Portal 2026</p>
+          <h1>A high-trust admission experience designed to feel official, polished, and easy to complete.</h1>
+          <p class="hero-text">
+            This upgraded AVJAIN admission page preserves the full live field set, conditional logic, qualification details, fee instruction step, and receipt upload flow, but presents them in a more professional university-grade interface.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#student-form">Begin Application</a>
+            <a class="button button-secondary" href="#payment-form">Upload Payment Proof</a>
+          </div>
+
+          <div class="hero-metrics">
+            <article>
+              <strong>01</strong>
+              <span>Fill verified student details</span>
+            </article>
+            <article>
+              <strong>02</strong>
+              <span>Pay fees using official bank details</span>
+            </article>
+            <article>
+              <strong>03</strong>
+              <span>Upload receipt and complete review</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-image-frame">
+            <img src="../avjain-2026/assets/hero-program.jpg" alt="AVJAIN campus academic visual">
+          </div>
+          <div class="hero-note">
+            <p class="eyebrow">Institutional clarity</p>
+            <h2>One admission journey, split into a clear academic form and a final payment verification step.</h2>
+            <ul class="hero-list">
+              <li>All official AVJAIN form fields preserved</li>
+              <li>Required-state and conditional-state validation improved</li>
+              <li>Cleaner spacing, contrast, hierarchy, and feedback states</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="assurance-strip">
+        <article class="assurance-card">
+          <p class="eyebrow">Professional UX</p>
+          <h3>Admissions-first layout</h3>
+          <p>Long forms are organized into distinct sections so applicants can move through the process with less confusion and fewer missed fields.</p>
+        </article>
+        <article class="assurance-card">
+          <p class="eyebrow">Validation</p>
+          <h3>Clear error handling</h3>
+          <p>Inline error messages, visible invalid states, and grouped radio validation make the form feel more production-ready.</p>
+        </article>
+        <article class="assurance-card">
+          <p class="eyebrow">Continuity</p>
+          <h3>Original process intact</h3>
+          <p>The form still reflects Step 1 student details, Step 2 fee submission, and Step 3 receipt upload from the current AVJAIN flow.</p>
+        </article>
+      </section>
+
+      <section class="form-section" id="student-form">
+        <div class="section-heading">
+          <p class="eyebrow">Step 1</p>
+          <h2>Student Admission Details</h2>
+          <p>Every original applicant field is present below, now arranged inside a more formal and polished admissions interface.</p>
+        </div>
+
+        <div class="admission-layout">
+          <form class="form-card" id="studentDetailsForm" novalidate>
+            <div class="form-topbar">
+              <div>
+                <p class="eyebrow">Primary Application</p>
+                <h3>Applicant Information</h3>
+              </div>
+              <div class="form-chip-row">
+                <span class="form-chip">Required fields marked *</span>
+                <span class="form-chip">Live conditional fields</span>
+              </div>
+            </div>
+
+            <div class="section-divider">
+              <span>Personal Information</span>
+            </div>
+
+            <div class="field-grid two-up">
+              <label class="field" data-field-label="Full Name of the Student">
+                <span>Full Name of the Student <em>*</em></span>
+                <input type="text" name="fullName" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Email">
+                <span>Email <em>*</em></span>
+                <input type="email" name="email" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Phone Number">
+                <span>Phone Number <em>*</em></span>
+                <input type="tel" name="phoneNumber" inputmode="numeric" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Blood Group">
+                <span>Blood Group <em>*</em></span>
+                <input type="text" name="bloodGroup" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Father's Name">
+                <span>Father's Name <em>*</em></span>
+                <input type="text" name="fatherName" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Father's Profession">
+                <span>Father's Profession <em>*</em></span>
+                <input type="text" name="fatherProfession" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Mother's Name">
+                <span>Mother's Name <em>*</em></span>
+                <input type="text" name="motherName" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Mother's Profession">
+                <span>Mother's Profession <em>*</em></span>
+                <input type="text" name="motherProfession" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Guardian's Name">
+                <span>Guardian's Name</span>
+                <input type="text" name="guardianName">
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Guardian's Profession">
+                <span>Guardian's Profession</span>
+                <input type="text" name="guardianProfession">
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field field-full" data-field-label="Permanent Address">
+                <span>Permanent Address <em>*</em></span>
+                <textarea name="permanentAddress" rows="4" required></textarea>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field field-full" data-field-label="Local Guardian's Address">
+                <span>Local Guardian's Address <em>*</em></span>
+                <textarea name="localGuardianAddress" rows="4" required></textarea>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Telephone No. with STD Code">
+                <span>Telephone No. with STD Code</span>
+                <input type="text" name="telephoneStdCode">
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Mobile No">
+                <span>Mobile No <em>*</em></span>
+                <input type="tel" name="mobileNo" inputmode="numeric" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+            </div>
+
+            <div class="section-divider">
+              <span>Eligibility and Facilities</span>
+            </div>
+
+            <div class="field-grid three-up">
+              <label class="field" data-field-label="Category">
+                <span>Category <em>*</em></span>
+                <select name="category" id="categorySelect" required>
+                  <option value="">Select category</option>
+                  <option value="General">General</option>
+                  <option value="SC">SC</option>
+                  <option value="ST">ST</option>
+                  <option value="Backward Class">Backward Class</option>
+                  <option value="Any other reserved category">Any other reserved category</option>
+                </select>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field is-hidden" id="reservedCategoryNameField" data-field-label="Reserved Category Name">
+                <span>Reserved Category Name</span>
+                <input type="text" name="reservedCategoryName">
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field is-hidden" id="reservedCategoryCertificateField" data-field-label="Reserved Category Certificate">
+                <span>Please attach certificate from the competent authority</span>
+                <input type="file" name="reservedCategoryCertificate" data-max-size="2097152">
+                <small>Max. file size: 2 MB.</small>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Date of Birth">
+                <span>Date of Birth <em>*</em></span>
+                <input type="text" name="dateOfBirth" placeholder="dd/mm/yyyy" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}$" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Nationality">
+                <span>Nationality <em>*</em></span>
+                <input type="text" name="nationality" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+            </div>
+
+            <div class="choice-grid">
+              <fieldset class="choice-field" data-field-label="Hostel Accommodation required?">
+                <legend>Hostel Accommodation required? <em>*</em></legend>
+                <label><input type="radio" name="hostelAccommodation" value="Yes" required> Yes</label>
+                <label><input type="radio" name="hostelAccommodation" value="No" required> No</label>
+                <small class="field-error" aria-live="polite"></small>
+              </fieldset>
+              <fieldset class="choice-field" data-field-label="Join NCC?">
+                <legend>Join NCC? <em>*</em></legend>
+                <label><input type="radio" name="joinNcc" value="Yes" required> Yes</label>
+                <label><input type="radio" name="joinNcc" value="No" required> No</label>
+                <small class="field-error" aria-live="polite"></small>
+              </fieldset>
+              <fieldset class="choice-field" data-field-label="Transportation">
+                <legend>Transportation <em>*</em></legend>
+                <label><input type="radio" name="transportation" value="Yes" required> Yes</label>
+                <label><input type="radio" name="transportation" value="No" required> No</label>
+                <small class="field-error" aria-live="polite"></small>
+              </fieldset>
+            </div>
+
+            <div class="field-grid">
+              <label class="field field-full is-hidden" id="transportAreaField" data-field-label="Area">
+                <span>Area</span>
+                <input type="text" name="transportArea">
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+            </div>
+
+            <div class="section-divider">
+              <span>Qualification of the Student</span>
+            </div>
+
+            <div class="table-shell">
+              <div class="table-head">
+                <div>
+                  <h3>Academic Qualification Record</h3>
+                  <p>The expandable qualification table from the original form is preserved below.</p>
+                </div>
+                <button class="button button-secondary" type="button" id="addQualificationRow">Add Row</button>
+              </div>
+
+              <div class="table-wrap">
+                <table class="qualification-table">
+                  <thead>
+                    <tr>
+                      <th>Class/Course</th>
+                      <th>Name of School/College</th>
+                      <th>Roll No</th>
+                      <th>Year of Passing</th>
+                      <th>Aggregate Marks/Max</th>
+                      <th>Percentage / Grade</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="qualificationRows"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="consent-card" data-field-label="Consent">
+              <div>
+                <p class="eyebrow">Declaration</p>
+                <h3>Consent and Undertaking</h3>
+              </div>
+              <label class="consent-check">
+                <input type="checkbox" name="consent" required>
+                <span>I solemnly declare that</span>
+              </label>
+              <div class="consent-copy">
+                <p>(a) I have never been disqualified from appearing in any University/ Board examination.</p>
+                <p>(b) I have been never prosecuted/ detained/ fined/ convicted by the institution.</p>
+                <p>(c.) The forgoing information is complete and correct.</p>
+                <p>(d) I will abide by the rules and regulations laid down by the institution.</p>
+                <p>(e) I understand that the failure to comply with the rules and regulations or if any information given above is found incorrect, the institution will be free to take an appropriate action.</p>
+                <p>(f) I am aware that ragging is totally banned, if found guilty of ragging, I would be liable to be punished as per rules and regulation of the University/ law of land.</p>
+              </div>
+              <small class="field-error" aria-live="polite"></small>
+            </div>
+
+            <div class="step-banner">
+              <p class="eyebrow">Step 2</p>
+              <h3>Submit Fees to Bank Account</h3>
+              <p>Before proceeding to receipt upload, submit the fee to the official account details provided by the college.</p>
+              <a href="https://avjain.org/bank-accounts/" target="_blank" rel="noreferrer">Check bank account details here</a>
+            </div>
+
+            <div class="captcha-note">
+              <span>CAPTCHA</span>
+              <p>The live site uses invisible reCAPTCHA on submission. This premium local redesign preserves the final-step placement and validation expectation.</p>
+            </div>
+
+            <div class="form-actions">
+              <button class="button button-primary" type="submit">Submit Student Details</button>
+              <p class="status-text" id="studentStatus" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <aside class="side-panel">
+            <article class="side-card side-card-accent">
+              <p class="eyebrow">Application Review</p>
+              <h3>Before you submit</h3>
+              <ul class="side-list">
+                <li>Check spellings in applicant, parent, and guardian names</li>
+                <li>Use the official date formats exactly as shown in each section</li>
+                <li>Keep category and transport selections accurate so extra fields appear correctly</li>
+                <li>Expand qualification rows if you need to enter more academic records</li>
+              </ul>
+            </article>
+
+            <article class="side-card">
+              <p class="eyebrow">What stays the same</p>
+              <h3>Original form logic preserved</h3>
+              <ul class="side-list">
+                <li>Reserved category fields appear only when needed</li>
+                <li>Transport area appears only when transportation is selected</li>
+                <li>Qualification list supports dynamic row addition and removal</li>
+                <li>File upload size rules are validated before submission</li>
+              </ul>
+            </article>
+
+            <article class="side-card side-visual-card">
+              <img src="../avjain-2026/assets/management.jpg" alt="AVJAIN admissions visual">
+              <div>
+                <p class="eyebrow">Admissions Desk</p>
+                <h3>Professional and applicant-friendly.</h3>
+                <p>This version focuses on trust, polish, and clarity while remaining faithful to the actual AVJAIN form flow.</p>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="form-section payment-section" id="payment-form">
+        <div class="section-heading">
+          <p class="eyebrow">Step 3</p>
+          <h2>Payment Proof Submission</h2>
+          <p>After fee submission, upload the payment proof using the same field set and restrictions as the current AVJAIN process.</p>
+        </div>
+
+        <div class="payment-layout">
+          <div class="payment-copy">
+            <div class="payment-copy-top">
+              <p class="eyebrow">Final Verification</p>
+              <h3>Upload the screenshot or photo of the bank receipt.</h3>
+              <p>This section preserves the current receipt workflow, including the accepted file types and the `dd-mm-yyyy` payment date format.</p>
+            </div>
+            <img src="../avjain-2026/assets/computer-science.jpg" alt="AVJAIN student activity visual">
+          </div>
+
+          <form class="form-card compact-card" id="paymentProofForm" novalidate>
+            <div class="form-topbar">
+              <div>
+                <p class="eyebrow">Receipt Upload</p>
+                <h3>Payment Confirmation Details</h3>
+              </div>
+            </div>
+
+            <div class="field-grid two-up">
+              <label class="field" data-field-label="Full Name of Student">
+                <span>Full Name of Student <em>*</em></span>
+                <input type="text" name="paymentStudentName" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Course/Year">
+                <span>Course/Year <em>*</em></span>
+                <input type="text" name="courseYear" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Father Name">
+                <span>Father Name <em>*</em></span>
+                <input type="text" name="paymentFatherName" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Mother Name">
+                <span>Mother Name <em>*</em></span>
+                <input type="text" name="paymentMotherName" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Bank Account Name">
+                <span>Bank Account Name through which payment is deposit <em>*</em></span>
+                <input type="text" name="bankAccountName" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Transaction Number / Reference ID">
+                <span>Transaction Number / Reference ID <em>*</em></span>
+                <input type="text" name="transactionReference" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Date of Payment">
+                <span>Date of Payment <em>*</em></span>
+                <input type="text" name="dateOfPayment" placeholder="dd-mm-yyyy" pattern="^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-[0-9]{4}$" required>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+              <label class="field" data-field-label="Bank Receipt">
+                <span>Upload Screenshot/Picture of the Bank Receipt <em>*</em></span>
+                <input type="file" name="bankReceipt" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" data-max-size="2097152" required>
+                <small>Accepted file types: jpg, jpeg, png, pdf, doc, docx, Max. file size: 2 MB.</small>
+                <small class="field-error" aria-live="polite"></small>
+              </label>
+            </div>
+
+            <div class="captcha-note">
+              <span>CAPTCHA</span>
+              <p>The live site uses invisible reCAPTCHA here as well. This prototype focuses on polished validation and UX while preserving the original final-step structure.</p>
+            </div>
+
+            <div class="form-actions">
+              <button class="button button-primary" type="submit">Submit Receipt Details</button>
+              <p class="status-text" id="paymentStatus" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <template id="qualificationRowTemplate">
+    <tr>
+      <td><input type="text" name="qualificationClassCourse[]"></td>
+      <td><input type="text" name="qualificationSchoolCollege[]"></td>
+      <td><input type="text" name="qualificationRollNo[]"></td>
+      <td><input type="text" name="qualificationYearPassing[]"></td>
+      <td><input type="text" name="qualificationMarks[]"></td>
+      <td><input type="text" name="qualificationPercentageGrade[]"></td>
+      <td><button class="table-action" type="button" data-remove-row>Remove</button></td>
+    </tr>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
